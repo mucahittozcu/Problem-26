@@ -13,9 +13,7 @@ const [counter,setCounter] = useState(0)
         setCounter(counter => counter + 1)
       },1000)
     }
-     else{
-      setTimer(false)
-     }
+     
      return () =>  clearInterval(timerId)
     },[timer])
     
